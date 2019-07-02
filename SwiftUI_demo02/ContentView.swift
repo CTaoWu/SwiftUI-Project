@@ -31,7 +31,10 @@ struct ContentView : View {
                         ContentRow(title: "ZStack", description: "覆盖布局")
                     }
                     NavigationButton(destination: CTScrollView(imageName:["1","2","3","4","5","6","7","8"])) {
-                        ContentRow(title: "ScrollView", description: "滚动视图")
+                        ContentRow(title: "ScrollView", description: "可滚动声明")
+                    }
+                    NavigationButton(destination: ListPage()) {
+                        ContentRow(title: "List", description: "可滚动声明")
                     }
                 })
                 Section(header: Text("常用的控件"), content: {
@@ -39,13 +42,25 @@ struct ContentView : View {
                         ContentRow(title: "Text", description: "文本")
                     }
                     NavigationButton(destination: TextFieldPage()) {
-                        ContentRow(title: "TextField", description: "文本")
+                        ContentRow(title: "TextField", description: "文本输入")
                     }
                     NavigationButton(destination: ButtonPage()) {
                         ContentRow(title: "Button", description: "常用的Button")
                     }
                     NavigationButton(destination: ImagePage()) {
                         ContentRow(title: "Image", description: "常用的Image")
+                    }
+                    NavigationButton(destination: DividerPage()) {
+                        ContentRow(title: "Divider", description: "线")
+                    }
+                    NavigationButton(destination: DatePickerPage()) {
+                        ContentRow(title: "DatePicker", description: "时间选择器和数据绑定")
+                    }
+                    NavigationButton(destination: SliderPage()) {
+                        ContentRow(title: "Slider", description: "时间选择器和数据绑定")
+                    }
+                    NavigationButton(destination: StepperPage()) {
+                        ContentRow(title: "Stepper", description: "步数器")
                     }
                 })
 //                Section(header: Text("常用的声明式"), content: {

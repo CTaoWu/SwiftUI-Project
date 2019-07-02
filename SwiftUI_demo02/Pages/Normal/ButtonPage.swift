@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ButtonPage : View {
+    
+    @Environment(\.editMode) var mode
+    
     var body: some View {
         
         List {
@@ -19,11 +22,16 @@ struct ButtonPage : View {
                 ContentRow(title: "PresentationButton", description: "底部弹出视图的按钮，很像京东加入购物车动画")
             }
             Button.init(action: {
-                
+                print("Button被点击")
             }) {
                 Text("普通的button")
             }
-            
+            EditButton()
+            if self.mode?.value == .inactive {
+                Text("inactive")
+            } else {
+                Text("inactive222")
+            }
         }
             .navigationBarTitle(Text("Button们"))
     }

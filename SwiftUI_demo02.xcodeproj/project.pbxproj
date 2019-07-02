@@ -58,6 +58,11 @@
 		A30A14C322CB037800252DC6 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14BB22CB037800252DC6 /* HikeGraph.swift */; };
 		A30A14C622CB03B700252DC6 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14C522CB03B700252DC6 /* HexagonParameters.swift */; };
 		A30A14C822CB2ED900252DC6 /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14C722CB2ED900252DC6 /* ImagePage.swift */; };
+		A30A14CA22CB454200252DC6 /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14C922CB454200252DC6 /* ListPage.swift */; };
+		A30A14CC22CB49BA00252DC6 /* DividerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14CB22CB49BA00252DC6 /* DividerPage.swift */; };
+		A30A14CE22CB4B9D00252DC6 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14CD22CB4B9D00252DC6 /* DatePickerPage.swift */; };
+		A30A14D022CB63C200252DC6 /* SliderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14CF22CB63C200252DC6 /* SliderPage.swift */; };
+		A30A14D222CB67B400252DC6 /* StepperPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14D122CB67B400252DC6 /* StepperPage.swift */; };
 		A30D5A2C22C9FB98004A04CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A2B22C9FB98004A04CD /* AppDelegate.swift */; };
 		A30D5A2E22C9FB98004A04CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A2D22C9FB98004A04CD /* SceneDelegate.swift */; };
 		A30D5A3122C9FB98004A04CD /* SwiftUI_demo02.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A2F22C9FB98004A04CD /* SwiftUI_demo02.xcdatamodeld */; };
@@ -143,6 +148,11 @@
 		A30A14BB22CB037800252DC6 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		A30A14C522CB03B700252DC6 /* HexagonParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		A30A14C722CB2ED900252DC6 /* ImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePage.swift; sourceTree = "<group>"; };
+		A30A14C922CB454200252DC6 /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
+		A30A14CB22CB49BA00252DC6 /* DividerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerPage.swift; sourceTree = "<group>"; };
+		A30A14CD22CB4B9D00252DC6 /* DatePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
+		A30A14CF22CB63C200252DC6 /* SliderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPage.swift; sourceTree = "<group>"; };
+		A30A14D122CB67B400252DC6 /* StepperPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperPage.swift; sourceTree = "<group>"; };
 		A30D5A2822C9FB98004A04CD /* SwiftUI_demo02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_demo02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30D5A2B22C9FB98004A04CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A30D5A2D22C9FB98004A04CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +207,10 @@
 				A30A146122CAF5EE00252DC6 /* TextFieldPage.swift */,
 				A30A145D22CAF02600252DC6 /* ButtonPage.swift */,
 				A30A14C722CB2ED900252DC6 /* ImagePage.swift */,
+				A30A14CB22CB49BA00252DC6 /* DividerPage.swift */,
+				A30A14CD22CB4B9D00252DC6 /* DatePickerPage.swift */,
+				A30A14CF22CB63C200252DC6 /* SliderPage.swift */,
+				A30A14D122CB67B400252DC6 /* StepperPage.swift */,
 			);
 			path = Normal;
 			sourceTree = "<group>";
@@ -391,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				A31F138722CA156E00EACA2B /* CTScrollView.swift */,
+				A30A14C922CB454200252DC6 /* ListPage.swift */,
 			);
 			path = Scroll;
 			sourceTree = "<group>";
@@ -546,12 +561,15 @@
 			files = (
 				A30A146022CAF0F700252DC6 /* HelloWorldPage.swift in Sources */,
 				A30A14B122CB034500252DC6 /* Profile.swift in Sources */,
+				A30A14CE22CB4B9D00252DC6 /* DatePickerPage.swift in Sources */,
 				A31F138522CA0ECB00EACA2B /* ZStackPage.swift in Sources */,
 				A30A14AA22CB031B00252DC6 /* FeatureCard.swift in Sources */,
 				A30A14A822CB031800252DC6 /* PageControl.swift in Sources */,
 				A30A149322CB02AD00252DC6 /* UserData.swift in Sources */,
 				A30A145C22CAE67600252DC6 /* TextPage.swift in Sources */,
 				A30A14B222CB034500252DC6 /* ProfileEditor.swift in Sources */,
+				A30A14D022CB63C200252DC6 /* SliderPage.swift in Sources */,
+				A30A14D222CB67B400252DC6 /* StepperPage.swift in Sources */,
 				A30A14BC22CB037800252DC6 /* LandmarkRow.swift in Sources */,
 				A30A14C022CB037800252DC6 /* GraphCapsule.swift in Sources */,
 				A30A14C622CB03B700252DC6 /* HexagonParameters.swift in Sources */,
@@ -563,6 +581,8 @@
 				A30A149C22CB02F200252DC6 /* Badge.swift in Sources */,
 				A30D5A2C22C9FB98004A04CD /* AppDelegate.swift in Sources */,
 				A30A14A222CB030100252DC6 /* PathAndShapes.swift in Sources */,
+				A30A14CA22CB454200252DC6 /* ListPage.swift in Sources */,
+				A30A14CC22CB49BA00252DC6 /* DividerPage.swift in Sources */,
 				A30A14A422CB030C00252DC6 /* PageViewController.swift in Sources */,
 				A30A14C122CB037800252DC6 /* CategoryRow.swift in Sources */,
 				A31F138322CA0E5900EACA2B /* HStackPage.swift in Sources */,
