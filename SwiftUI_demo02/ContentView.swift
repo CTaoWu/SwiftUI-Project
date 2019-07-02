@@ -12,6 +12,11 @@ struct ContentView : View {
     var body: some View {
         NavigationView {
             List {
+                Section(header: Text("苹果官方demo"), content: {
+                    NavigationButton(destination: CategoryHome().environmentObject(UserData())) {
+                        ContentRow(title: "苹果官方demo", description: "苹果官方demo")
+                    }
+                })
                 Section(header: Text("常用的声明式方式"), content: {
                     NavigationButton(destination: VStkPage()) {
                         ContentRow(title: "VStack", description: "声明垂直布局")
