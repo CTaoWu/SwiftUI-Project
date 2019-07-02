@@ -4,12 +4,12 @@
 
 7月1日 . 
   布局声明--  
-    VStack:  
-    HStack:  
-    ZStack:  
+    *VStack:  
+    *HStack:  
+    *ZStack:  
   常用控件--  
-    Text:  
-    TextField:  
-    NavigationButton:  
-    PresentationButton:  
+    *Text:  
+    *TextField:  
+    *NavigationButton:  
+    *PresentationButton:  
     
