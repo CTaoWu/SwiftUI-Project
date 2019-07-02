@@ -10,7 +10,20 @@ import SwiftUI
 
 struct ZStackPage : View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        /// ZStack用于子控件覆盖布局
+        /// alignment内设置布局样式，具体看官方注释
+        ZStack(alignment: .bottom, content: {
+            Image("1")
+                .resizable()
+                .frame(width: 375, height: 200)
+                .tapAction {
+                    print("图片加入了点击事件方法")
+            }
+            Text("覆盖上去的内容")
+                .color(Color.white)
+                .fontWeight(.light)
+        })
+        
     }
 }
 
