@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A30A145C22CAE67600252DC6 /* TextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A145B22CAE67600252DC6 /* TextPage.swift */; };
-		A30A145E22CAF02600252DC6 /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A145D22CAF02600252DC6 /* ButtonPage.swift */; };
-		A30A146022CAF0F700252DC6 /* HelloWorldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A145F22CAF0F700252DC6 /* HelloWorldPage.swift */; };
-		A30A146222CAF5EE00252DC6 /* TextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A146122CAF5EE00252DC6 /* TextFieldPage.swift */; };
 		A30A147B22CB029800252DC6 /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30A146922CB029600252DC6 /* hiddenlake.jpg */; };
 		A30A147C22CB029800252DC6 /* chincoteague.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30A146A22CB029600252DC6 /* chincoteague.jpg */; };
 		A30A147D22CB029800252DC6 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30A146B22CB029600252DC6 /* umbagog.jpg */; };
@@ -57,26 +53,39 @@
 		A30A14C222CB037800252DC6 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14BA22CB037800252DC6 /* CircleImage.swift */; };
 		A30A14C322CB037800252DC6 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14BB22CB037800252DC6 /* HikeGraph.swift */; };
 		A30A14C622CB03B700252DC6 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14C522CB03B700252DC6 /* HexagonParameters.swift */; };
-		A30A14C822CB2ED900252DC6 /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14C722CB2ED900252DC6 /* ImagePage.swift */; };
-		A30A14CA22CB454200252DC6 /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14C922CB454200252DC6 /* ListPage.swift */; };
-		A30A14CC22CB49BA00252DC6 /* DividerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14CB22CB49BA00252DC6 /* DividerPage.swift */; };
-		A30A14CE22CB4B9D00252DC6 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14CD22CB4B9D00252DC6 /* DatePickerPage.swift */; };
-		A30A14D022CB63C200252DC6 /* SliderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14CF22CB63C200252DC6 /* SliderPage.swift */; };
-		A30A14D222CB67B400252DC6 /* StepperPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A14D122CB67B400252DC6 /* StepperPage.swift */; };
 		A30D5A2C22C9FB98004A04CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A2B22C9FB98004A04CD /* AppDelegate.swift */; };
 		A30D5A2E22C9FB98004A04CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A2D22C9FB98004A04CD /* SceneDelegate.swift */; };
 		A30D5A3122C9FB98004A04CD /* SwiftUI_demo02.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A2F22C9FB98004A04CD /* SwiftUI_demo02.xcdatamodeld */; };
-		A30D5A3322C9FB98004A04CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A3222C9FB98004A04CD /* ContentView.swift */; };
 		A30D5A3522C9FB9A004A04CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30D5A3422C9FB9A004A04CD /* Assets.xcassets */; };
 		A30D5A3822C9FB9A004A04CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30D5A3722C9FB9A004A04CD /* Preview Assets.xcassets */; };
 		A30D5A3B22C9FB9A004A04CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30D5A3922C9FB9A004A04CD /* LaunchScreen.storyboard */; };
 		A30D5A4622C9FB9A004A04CD /* SwiftUI_demo02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A4522C9FB9A004A04CD /* SwiftUI_demo02Tests.swift */; };
 		A30D5A5122C9FB9A004A04CD /* SwiftUI_demo02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D5A5022C9FB9A004A04CD /* SwiftUI_demo02UITests.swift */; };
-		A31F137E22CA068400EACA2B /* ContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31F137D22CA068400EACA2B /* ContentRow.swift */; };
-		A31F138022CA0BCE00EACA2B /* VStkPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31F137F22CA0BCE00EACA2B /* VStkPage.swift */; };
-		A31F138322CA0E5900EACA2B /* HStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31F138222CA0E5900EACA2B /* HStackPage.swift */; };
-		A31F138522CA0ECB00EACA2B /* ZStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31F138422CA0ECB00EACA2B /* ZStackPage.swift */; };
-		A31F138822CA156E00EACA2B /* CTScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31F138722CA156E00EACA2B /* CTScrollView.swift */; };
+		A3180AB122CCA3E8006A2D03 /* RootViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A8E22CCA3E8006A2D03 /* RootViewManager.swift */; };
+		A3180AB222CCA3E8006A2D03 /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9222CCA3E8006A2D03 /* ListPage.swift */; };
+		A3180AB322CCA3E8006A2D03 /* CTScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9322CCA3E8006A2D03 /* CTScrollView.swift */; };
+		A3180AB422CCA3E8006A2D03 /* HelloWorldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9422CCA3E8006A2D03 /* HelloWorldPage.swift */; };
+		A3180AB522CCA3E8006A2D03 /* ContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9522CCA3E8006A2D03 /* ContentRow.swift */; };
+		A3180AB622CCA3E8006A2D03 /* NavigationViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9722CCA3E8006A2D03 /* NavigationViewPage.swift */; };
+		A3180AB722CCA3E8006A2D03 /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9822CCA3E8006A2D03 /* ButtonPage.swift */; };
+		A3180AB822CCA3E8006A2D03 /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9922CCA3E8006A2D03 /* ImagePage.swift */; };
+		A3180AB922CCA3E8006A2D03 /* SliderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9A22CCA3E8006A2D03 /* SliderPage.swift */; };
+		A3180ABA22CCA3E8006A2D03 /* TextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9B22CCA3E8006A2D03 /* TextPage.swift */; };
+		A3180ABB22CCA3E8006A2D03 /* SegmentedControlPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9C22CCA3E8006A2D03 /* SegmentedControlPage.swift */; };
+		A3180ABC22CCA3E8006A2D03 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9D22CCA3E8006A2D03 /* DatePickerPage.swift */; };
+		A3180ABD22CCA3E8006A2D03 /* TabbedViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9E22CCA3E8006A2D03 /* TabbedViewPage.swift */; };
+		A3180ABE22CCA3E8006A2D03 /* TextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180A9F22CCA3E8006A2D03 /* TextFieldPage.swift */; };
+		A3180ABF22CCA3E8006A2D03 /* StepperPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AA022CCA3E8006A2D03 /* StepperPage.swift */; };
+		A3180AC022CCA3E8006A2D03 /* DividerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AA122CCA3E8006A2D03 /* DividerPage.swift */; };
+		A3180AC122CCA3E8006A2D03 /* LoopViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AA422CCA3E8006A2D03 /* LoopViewCard.swift */; };
+		A3180AC222CCA3E8006A2D03 /* LoopControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AA522CCA3E8006A2D03 /* LoopControl.swift */; };
+		A3180AC322CCA3E8006A2D03 /* LoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AA622CCA3E8006A2D03 /* LoopViewController.swift */; };
+		A3180AC422CCA3E8006A2D03 /* LoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AA722CCA3E8006A2D03 /* LoopView.swift */; };
+		A3180AC522CCA3E8006A2D03 /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AA922CCA3E8006A2D03 /* GroupPage.swift */; };
+		A3180AC622CCA3E8006A2D03 /* ZStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AAA22CCA3E8006A2D03 /* ZStackPage.swift */; };
+		A3180AC722CCA3E8006A2D03 /* VStkPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AAB22CCA3E8006A2D03 /* VStkPage.swift */; };
+		A3180AC822CCA3E8006A2D03 /* HStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AAC22CCA3E8006A2D03 /* HStackPage.swift */; };
+		A3180AC922CCA3E8006A2D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AAD22CCA3E8006A2D03 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,10 +106,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A30A145B22CAE67600252DC6 /* TextPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPage.swift; sourceTree = "<group>"; };
-		A30A145D22CAF02600252DC6 /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
-		A30A145F22CAF0F700252DC6 /* HelloWorldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldPage.swift; sourceTree = "<group>"; };
-		A30A146122CAF5EE00252DC6 /* TextFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPage.swift; sourceTree = "<group>"; };
 		A30A146922CB029600252DC6 /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiddenlake.jpg; sourceTree = "<group>"; };
 		A30A146A22CB029600252DC6 /* chincoteague.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chincoteague.jpg; sourceTree = "<group>"; };
 		A30A146B22CB029600252DC6 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
@@ -147,17 +152,10 @@
 		A30A14BA22CB037800252DC6 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A30A14BB22CB037800252DC6 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		A30A14C522CB03B700252DC6 /* HexagonParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
-		A30A14C722CB2ED900252DC6 /* ImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePage.swift; sourceTree = "<group>"; };
-		A30A14C922CB454200252DC6 /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
-		A30A14CB22CB49BA00252DC6 /* DividerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerPage.swift; sourceTree = "<group>"; };
-		A30A14CD22CB4B9D00252DC6 /* DatePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
-		A30A14CF22CB63C200252DC6 /* SliderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPage.swift; sourceTree = "<group>"; };
-		A30A14D122CB67B400252DC6 /* StepperPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperPage.swift; sourceTree = "<group>"; };
 		A30D5A2822C9FB98004A04CD /* SwiftUI_demo02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_demo02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30D5A2B22C9FB98004A04CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A30D5A2D22C9FB98004A04CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A30D5A3022C9FB98004A04CD /* SwiftUI_demo02.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_demo02.xcdatamodel; sourceTree = "<group>"; };
-		A30D5A3222C9FB98004A04CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A30D5A3422C9FB9A004A04CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A30D5A3722C9FB9A004A04CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A30D5A3A22C9FB9A004A04CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -168,11 +166,31 @@
 		A30D5A4C22C9FB9A004A04CD /* SwiftUI_demo02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_demo02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30D5A5022C9FB9A004A04CD /* SwiftUI_demo02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_demo02UITests.swift; sourceTree = "<group>"; };
 		A30D5A5222C9FB9A004A04CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A31F137D22CA068400EACA2B /* ContentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
-		A31F137F22CA0BCE00EACA2B /* VStkPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStkPage.swift; sourceTree = "<group>"; };
-		A31F138222CA0E5900EACA2B /* HStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackPage.swift; sourceTree = "<group>"; };
-		A31F138422CA0ECB00EACA2B /* ZStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackPage.swift; sourceTree = "<group>"; };
-		A31F138722CA156E00EACA2B /* CTScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTScrollView.swift; sourceTree = "<group>"; };
+		A3180A8E22CCA3E8006A2D03 /* RootViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewManager.swift; sourceTree = "<group>"; };
+		A3180A9222CCA3E8006A2D03 /* ListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
+		A3180A9322CCA3E8006A2D03 /* CTScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTScrollView.swift; sourceTree = "<group>"; };
+		A3180A9422CCA3E8006A2D03 /* HelloWorldPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldPage.swift; sourceTree = "<group>"; };
+		A3180A9522CCA3E8006A2D03 /* ContentRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
+		A3180A9722CCA3E8006A2D03 /* NavigationViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewPage.swift; sourceTree = "<group>"; };
+		A3180A9822CCA3E8006A2D03 /* ButtonPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
+		A3180A9922CCA3E8006A2D03 /* ImagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePage.swift; sourceTree = "<group>"; };
+		A3180A9A22CCA3E8006A2D03 /* SliderPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderPage.swift; sourceTree = "<group>"; };
+		A3180A9B22CCA3E8006A2D03 /* TextPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPage.swift; sourceTree = "<group>"; };
+		A3180A9C22CCA3E8006A2D03 /* SegmentedControlPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlPage.swift; sourceTree = "<group>"; };
+		A3180A9D22CCA3E8006A2D03 /* DatePickerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
+		A3180A9E22CCA3E8006A2D03 /* TabbedViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedViewPage.swift; sourceTree = "<group>"; };
+		A3180A9F22CCA3E8006A2D03 /* TextFieldPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldPage.swift; sourceTree = "<group>"; };
+		A3180AA022CCA3E8006A2D03 /* StepperPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperPage.swift; sourceTree = "<group>"; };
+		A3180AA122CCA3E8006A2D03 /* DividerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerPage.swift; sourceTree = "<group>"; };
+		A3180AA422CCA3E8006A2D03 /* LoopViewCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopViewCard.swift; sourceTree = "<group>"; };
+		A3180AA522CCA3E8006A2D03 /* LoopControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopControl.swift; sourceTree = "<group>"; };
+		A3180AA622CCA3E8006A2D03 /* LoopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopViewController.swift; sourceTree = "<group>"; };
+		A3180AA722CCA3E8006A2D03 /* LoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopView.swift; sourceTree = "<group>"; };
+		A3180AA922CCA3E8006A2D03 /* GroupPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
+		A3180AAA22CCA3E8006A2D03 /* ZStackPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZStackPage.swift; sourceTree = "<group>"; };
+		A3180AAB22CCA3E8006A2D03 /* VStkPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStkPage.swift; sourceTree = "<group>"; };
+		A3180AAC22CCA3E8006A2D03 /* HStackPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStackPage.swift; sourceTree = "<group>"; };
+		A3180AAD22CCA3E8006A2D03 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,21 +218,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A30A145A22CAE65C00252DC6 /* Normal */ = {
-			isa = PBXGroup;
-			children = (
-				A30A145B22CAE67600252DC6 /* TextPage.swift */,
-				A30A146122CAF5EE00252DC6 /* TextFieldPage.swift */,
-				A30A145D22CAF02600252DC6 /* ButtonPage.swift */,
-				A30A14C722CB2ED900252DC6 /* ImagePage.swift */,
-				A30A14CB22CB49BA00252DC6 /* DividerPage.swift */,
-				A30A14CD22CB4B9D00252DC6 /* DatePickerPage.swift */,
-				A30A14CF22CB63C200252DC6 /* SliderPage.swift */,
-				A30A14D122CB67B400252DC6 /* StepperPage.swift */,
-			);
-			path = Normal;
-			sourceTree = "<group>";
-		};
 		A30A146322CB014A00252DC6 /* Apple Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,12 +342,11 @@
 		A30D5A2A22C9FB98004A04CD /* SwiftUI_demo02 */ = {
 			isa = PBXGroup;
 			children = (
+				A3180A8D22CCA3E8006A2D03 /* Manager */,
+				A3180A8F22CCA3E8006A2D03 /* Pages */,
 				A30A146322CB014A00252DC6 /* Apple Demo */,
-				A31F137C22CA03AB00EACA2B /* Pages */,
 				A30D5A2B22C9FB98004A04CD /* AppDelegate.swift */,
 				A30D5A2D22C9FB98004A04CD /* SceneDelegate.swift */,
-				A30D5A3222C9FB98004A04CD /* ContentView.swift */,
-				A31F137D22CA068400EACA2B /* ContentRow.swift */,
 				A30D5A3422C9FB9A004A04CD /* Assets.xcassets */,
 				A30D5A3922C9FB9A004A04CD /* LaunchScreen.storyboard */,
 				A30D5A3C22C9FB9A004A04CD /* Info.plist */,
@@ -380,34 +382,115 @@
 			path = SwiftUI_demo02UITests;
 			sourceTree = "<group>";
 		};
-		A31F137C22CA03AB00EACA2B /* Pages */ = {
+		A3180A8D22CCA3E8006A2D03 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				A30A145A22CAE65C00252DC6 /* Normal */,
-				A31F138622CA155100EACA2B /* Scroll */,
-				A31F138122CA0E4500EACA2B /* Stack */,
-				A30A145F22CAF0F700252DC6 /* HelloWorldPage.swift */,
+				A3180A8E22CCA3E8006A2D03 /* RootViewManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A3180A8F22CCA3E8006A2D03 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				A3180A9022CCA3E8006A2D03 /* FourPage */,
+				A3180AAE22CCA3E8006A2D03 /* ThirdPage */,
+				A3180AAF22CCA3E8006A2D03 /* FirstPage */,
+				A3180AB022CCA3E8006A2D03 /* SecondPage */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
 		};
-		A31F138122CA0E4500EACA2B /* Stack */ = {
+		A3180A9022CCA3E8006A2D03 /* FourPage */ = {
 			isa = PBXGroup;
 			children = (
-				A31F137F22CA0BCE00EACA2B /* VStkPage.swift */,
-				A31F138222CA0E5900EACA2B /* HStackPage.swift */,
-				A31F138422CA0ECB00EACA2B /* ZStackPage.swift */,
+				A3180A9122CCA3E8006A2D03 /* Scroll */,
+				A3180A9422CCA3E8006A2D03 /* HelloWorldPage.swift */,
+				A3180A9522CCA3E8006A2D03 /* ContentRow.swift */,
+				A3180A9622CCA3E8006A2D03 /* Normal */,
+				A3180AA222CCA3E8006A2D03 /* Sence */,
+				A3180AA822CCA3E8006A2D03 /* Stack */,
+				A3180AAD22CCA3E8006A2D03 /* ContentView.swift */,
+			);
+			path = FourPage;
+			sourceTree = "<group>";
+		};
+		A3180A9122CCA3E8006A2D03 /* Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				A3180A9222CCA3E8006A2D03 /* ListPage.swift */,
+				A3180A9322CCA3E8006A2D03 /* CTScrollView.swift */,
+			);
+			path = Scroll;
+			sourceTree = "<group>";
+		};
+		A3180A9622CCA3E8006A2D03 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				A3180A9722CCA3E8006A2D03 /* NavigationViewPage.swift */,
+				A3180A9822CCA3E8006A2D03 /* ButtonPage.swift */,
+				A3180A9922CCA3E8006A2D03 /* ImagePage.swift */,
+				A3180A9A22CCA3E8006A2D03 /* SliderPage.swift */,
+				A3180A9B22CCA3E8006A2D03 /* TextPage.swift */,
+				A3180A9C22CCA3E8006A2D03 /* SegmentedControlPage.swift */,
+				A3180A9D22CCA3E8006A2D03 /* DatePickerPage.swift */,
+				A3180A9E22CCA3E8006A2D03 /* TabbedViewPage.swift */,
+				A3180A9F22CCA3E8006A2D03 /* TextFieldPage.swift */,
+				A3180AA022CCA3E8006A2D03 /* StepperPage.swift */,
+				A3180AA122CCA3E8006A2D03 /* DividerPage.swift */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		A3180AA222CCA3E8006A2D03 /* Sence */ = {
+			isa = PBXGroup;
+			children = (
+				A3180AA322CCA3E8006A2D03 /* Loop */,
+			);
+			path = Sence;
+			sourceTree = "<group>";
+		};
+		A3180AA322CCA3E8006A2D03 /* Loop */ = {
+			isa = PBXGroup;
+			children = (
+				A3180AA422CCA3E8006A2D03 /* LoopViewCard.swift */,
+				A3180AA522CCA3E8006A2D03 /* LoopControl.swift */,
+				A3180AA622CCA3E8006A2D03 /* LoopViewController.swift */,
+				A3180AA722CCA3E8006A2D03 /* LoopView.swift */,
+			);
+			path = Loop;
+			sourceTree = "<group>";
+		};
+		A3180AA822CCA3E8006A2D03 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				A3180AA922CCA3E8006A2D03 /* GroupPage.swift */,
+				A3180AAA22CCA3E8006A2D03 /* ZStackPage.swift */,
+				A3180AAB22CCA3E8006A2D03 /* VStkPage.swift */,
+				A3180AAC22CCA3E8006A2D03 /* HStackPage.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
 		};
-		A31F138622CA155100EACA2B /* Scroll */ = {
+		A3180AAE22CCA3E8006A2D03 /* ThirdPage */ = {
 			isa = PBXGroup;
 			children = (
-				A31F138722CA156E00EACA2B /* CTScrollView.swift */,
-				A30A14C922CB454200252DC6 /* ListPage.swift */,
 			);
-			path = Scroll;
+			path = ThirdPage;
+			sourceTree = "<group>";
+		};
+		A3180AAF22CCA3E8006A2D03 /* FirstPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirstPage;
+			sourceTree = "<group>";
+		};
+		A3180AB022CCA3E8006A2D03 /* SecondPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecondPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,51 +642,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30A146022CAF0F700252DC6 /* HelloWorldPage.swift in Sources */,
+				A3180AC022CCA3E8006A2D03 /* DividerPage.swift in Sources */,
+				A3180AB422CCA3E8006A2D03 /* HelloWorldPage.swift in Sources */,
+				A3180AB722CCA3E8006A2D03 /* ButtonPage.swift in Sources */,
 				A30A14B122CB034500252DC6 /* Profile.swift in Sources */,
-				A30A14CE22CB4B9D00252DC6 /* DatePickerPage.swift in Sources */,
-				A31F138522CA0ECB00EACA2B /* ZStackPage.swift in Sources */,
 				A30A14AA22CB031B00252DC6 /* FeatureCard.swift in Sources */,
+				A3180AB622CCA3E8006A2D03 /* NavigationViewPage.swift in Sources */,
+				A3180AB222CCA3E8006A2D03 /* ListPage.swift in Sources */,
 				A30A14A822CB031800252DC6 /* PageControl.swift in Sources */,
+				A3180AC922CCA3E8006A2D03 /* ContentView.swift in Sources */,
+				A3180ABA22CCA3E8006A2D03 /* TextPage.swift in Sources */,
 				A30A149322CB02AD00252DC6 /* UserData.swift in Sources */,
-				A30A145C22CAE67600252DC6 /* TextPage.swift in Sources */,
+				A3180AC522CCA3E8006A2D03 /* GroupPage.swift in Sources */,
 				A30A14B222CB034500252DC6 /* ProfileEditor.swift in Sources */,
-				A30A14D022CB63C200252DC6 /* SliderPage.swift in Sources */,
-				A30A14D222CB67B400252DC6 /* StepperPage.swift in Sources */,
+				A3180ABF22CCA3E8006A2D03 /* StepperPage.swift in Sources */,
+				A3180AB322CCA3E8006A2D03 /* CTScrollView.swift in Sources */,
+				A3180AB822CCA3E8006A2D03 /* ImagePage.swift in Sources */,
 				A30A14BC22CB037800252DC6 /* LandmarkRow.swift in Sources */,
+				A3180AC322CCA3E8006A2D03 /* LoopViewController.swift in Sources */,
 				A30A14C022CB037800252DC6 /* GraphCapsule.swift in Sources */,
 				A30A14C622CB03B700252DC6 /* HexagonParameters.swift in Sources */,
 				A30A14A022CB02F900252DC6 /* HikeDetail.swift in Sources */,
-				A30A145E22CAF02600252DC6 /* ButtonPage.swift in Sources */,
+				A3180AC122CCA3E8006A2D03 /* LoopViewCard.swift in Sources */,
 				A30D5A3122C9FB98004A04CD /* SwiftUI_demo02.xcdatamodeld in Sources */,
 				A30A14C322CB037800252DC6 /* HikeGraph.swift in Sources */,
 				A30A149822CB02D800252DC6 /* LandmarkDetail.swift in Sources */,
+				A3180AC722CCA3E8006A2D03 /* VStkPage.swift in Sources */,
 				A30A149C22CB02F200252DC6 /* Badge.swift in Sources */,
+				A3180ABC22CCA3E8006A2D03 /* DatePickerPage.swift in Sources */,
 				A30D5A2C22C9FB98004A04CD /* AppDelegate.swift in Sources */,
+				A3180ABB22CCA3E8006A2D03 /* SegmentedControlPage.swift in Sources */,
 				A30A14A222CB030100252DC6 /* PathAndShapes.swift in Sources */,
-				A30A14CA22CB454200252DC6 /* ListPage.swift in Sources */,
-				A30A14CC22CB49BA00252DC6 /* DividerPage.swift in Sources */,
+				A3180AC822CCA3E8006A2D03 /* HStackPage.swift in Sources */,
 				A30A14A422CB030C00252DC6 /* PageViewController.swift in Sources */,
 				A30A14C122CB037800252DC6 /* CategoryRow.swift in Sources */,
-				A31F138322CA0E5900EACA2B /* HStackPage.swift in Sources */,
-				A30A14C822CB2ED900252DC6 /* ImagePage.swift in Sources */,
-				A31F138022CA0BCE00EACA2B /* VStkPage.swift in Sources */,
-				A30D5A3322C9FB98004A04CD /* ContentView.swift in Sources */,
+				A3180AC422CCA3E8006A2D03 /* LoopView.swift in Sources */,
+				A3180ABE22CCA3E8006A2D03 /* TextFieldPage.swift in Sources */,
+				A3180ABD22CCA3E8006A2D03 /* TabbedViewPage.swift in Sources */,
 				A30A149622CB02CD00252DC6 /* CategoryHome.swift in Sources */,
 				A30A149E22CB02F600252DC6 /* HikeView.swift in Sources */,
 				A30A14A622CB031300252DC6 /* PageView.swift in Sources */,
 				A30A14BE22CB037800252DC6 /* BadgeBackground.swift in Sources */,
-				A31F137E22CA068400EACA2B /* ContentRow.swift in Sources */,
 				A30A14BF22CB037800252DC6 /* MapView.swift in Sources */,
+				A3180AB122CCA3E8006A2D03 /* RootViewManager.swift in Sources */,
 				A30A149122CB02AD00252DC6 /* Hike.swift in Sources */,
 				A30A14C222CB037800252DC6 /* CircleImage.swift in Sources */,
-				A30A146222CAF5EE00252DC6 /* TextFieldPage.swift in Sources */,
 				A30A14BD22CB037800252DC6 /* HikeBadge.swift in Sources */,
+				A3180AB522CCA3E8006A2D03 /* ContentRow.swift in Sources */,
 				A30A14B022CB034500252DC6 /* ProfileSummary.swift in Sources */,
+				A3180AC622CCA3E8006A2D03 /* ZStackPage.swift in Sources */,
 				A30A149422CB02AD00252DC6 /* Data.swift in Sources */,
 				A30A14B322CB034500252DC6 /* ProfileHost.swift in Sources */,
 				A30D5A2E22C9FB98004A04CD /* SceneDelegate.swift in Sources */,
-				A31F138822CA156E00EACA2B /* CTScrollView.swift in Sources */,
+				A3180AB922CCA3E8006A2D03 /* SliderPage.swift in Sources */,
+				A3180AC222CCA3E8006A2D03 /* LoopControl.swift in Sources */,
 				A30A149222CB02AD00252DC6 /* Landmark.swift in Sources */,
 				A30A149A22CB02ED00252DC6 /* LandmarkList.swift in Sources */,
 			);

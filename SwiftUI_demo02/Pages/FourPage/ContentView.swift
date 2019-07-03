@@ -16,9 +16,6 @@ struct ContentView : View {
                     NavigationButton(destination: CategoryHome().environmentObject(UserData())) {
                         ContentRow(title: "苹果官方demo", description: "苹果官方demo")
                     }
-//                    PresentationButton(destination: CategoryHome().environmentObject(UserData())) {
-//                        ContentRow(title: "苹果官方demo", description: "苹果官方demo")
-//                    }
                 })
                 Section(header: Text("常用的声明式方式"), content: {
                     NavigationButton(destination: VStkPage()) {
@@ -35,6 +32,9 @@ struct ContentView : View {
                     }
                     NavigationButton(destination: ListPage()) {
                         ContentRow(title: "List", description: "可滚动声明")
+                    }
+                    NavigationButton(destination: GroupPage()) {
+                        ContentRow(title: "Group", description: "视图集合")
                     }
                 })
                 Section(header: Text("常用的控件"), content: {
@@ -62,10 +62,18 @@ struct ContentView : View {
                     NavigationButton(destination: StepperPage()) {
                         ContentRow(title: "Stepper", description: "步数器")
                     }
+                    NavigationButton(destination: SegmentedControlPage()) {
+                        ContentRow(title: "SegmentedControl", description: "分部控制器")
+                    }
                 })
-//                Section(header: Text("常用的声明式"), content: {
-//                    ContentRow(title: "VStack", description: "VStack：声明垂直布局")
-//                })
+                Section(header: Text("导航"), content: {
+                    NavigationButton(destination: NavigationViewPage()) {
+                        ContentRow(title: "NavigationView", description: "分部控制器")
+                    }
+                    NavigationButton(destination: TabbedViewPage()) {
+                        ContentRow(title: "TabbedView", description: "分部控制器")
+                    }
+                })
             }
                 .navigationBarTitle(Text("SwiftUI-常用内容"))
         }
