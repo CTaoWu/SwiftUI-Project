@@ -20,6 +20,23 @@ extension ViewBuilder {
 > > * Image:
 > > > resizable()方法调用后才能修改属性
 > > > 没有找到图片，会出错，最好重写方法
+> > * Slider: from-->滑动开始的值，through-->最大值
+```swift
+struct SliderPage : View {
+    
+    @State var bindingValue = 2.0
+    var body: some View {
+        VStack {
+            Text("\(bindingValue)")
+            Slider(value: $bindingValue, from: 3, through: 10) { (true) in
+                print("\(self.bindingValue)")
+            }
+                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+            Text(" from：滑动开始的值，through：最大值")
+        }
+    }
+}
+```
 > > * NavigationButton:  
 > > * PresentationButton:  
     
