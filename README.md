@@ -18,8 +18,8 @@ extension ViewBuilder {
 > > * Text:  
 > > * TextField: 
 > > * Image:
-        > resizable()方法调用后才能修改属性
-        > 没有找到图片，会出错，最好重写方法
+> > > resizable()方法调用后才能修改属性
+> > > 没有找到图片，会出错，最好重写方法
 > > * NavigationButton:  
 > > * PresentationButton:  
     
