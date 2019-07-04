@@ -33,7 +33,7 @@ extension View {
 导航和标签--  
 =========
 > * TabbedView:  
-    - 类似UITabbarController
+    - 类似UITabbarController   
     - 需要给view添加tag，tag使用来做切换展示界面的标识
 ```swift
         TabbedView(selection: $current) {
