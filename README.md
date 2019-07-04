@@ -22,18 +22,48 @@ extension View {
 
 ```
 
-> 布局声明--  
-> > * VStack:  垂直分布声明
-> > * HStack:  水平分布声明
-> > * ZStack:  叠加分布声明
+常用布局--  
+=========
+> * VStack:  垂直分布声明
+> * HStack:  水平分布声明
+> * ZStack:  叠加分布声明
+> * List:    (UITableView)内置好了cell，只需在里面添加好了需要的子view
+> * ScrollView: 可滚动容器
 
-> 常用控件--  
-> > * Text:  
-> > * TextField: 
-> > * Image:
-> > > resizable()方法调用后才能修改属性
-> > > 没有找到图片，会出错，最好重写方法
-> > * Slider: from-->滑动开始的值，through-->最大值
+导航和标签--  
+=========
+> * TabbedView:  类似UITabbarController
+```swift
+/// A view which allows for switching between multiple child views using
+/// interactable user interface elements.
+///
+/// - Note: `TabbedView` only supports tab items of type `Text`, `Image`, or a
+/// `LayoutView` of `Image` and `Text`. Passing any other type of view will
+/// result in a visible, empty tab item.
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, *)
+@available(watchOS, unavailable)
+public struct TabbedView<SelectionValue, Content> where SelectionValue : Hashable, Content : View {
+
+    /// Creates an instance that selects from content associated with
+    /// `Selection` values.
+    public init(selection: Binding<SelectionValue>, content: () -> Content)
+
+    /// The type of view representing the body of this view.
+    ///
+    /// When you create a custom view, Swift infers this type from your
+    /// implementation of the required `body` property.
+    public typealias Body = Never
+}
+```
+
+常用控件--
+=========
+> * Text:  
+> * TextField: 
+> * Image:
+> > resizable()方法调用后才能修改属性
+> > 没有找到图片，会出错，最好重写方法
+> * Slider: from-->滑动开始的值，through-->最大值
 ```swift
 struct SliderPage : View {
     
@@ -50,6 +80,6 @@ struct SliderPage : View {
     }
 }
 ```
-> > * NavigationButton:  
-> > * PresentationButton:  
+> * NavigationButton:  
+> * PresentationButton:  
     
