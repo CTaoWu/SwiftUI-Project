@@ -89,6 +89,7 @@
 		A3180ACD22CCA462006A2D03 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180ACC22CCA462006A2D03 /* FirstPage.swift */; };
 		A3180ACF22CCA46F006A2D03 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180ACE22CCA46F006A2D03 /* SecondPage.swift */; };
 		A3180AD122CCA487006A2D03 /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AD022CCA487006A2D03 /* ThirdPage.swift */; };
+		A37A9C0D22CDDA6200233E39 /* CardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A9C0C22CDDA6200233E39 /* CardPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		A3180ACC22CCA462006A2D03 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
 		A3180ACE22CCA46F006A2D03 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
 		A3180AD022CCA487006A2D03 /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
+		A37A9C0C22CDDA6200233E39 /* CardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -497,9 +499,18 @@
 		A3180AB022CCA3E8006A2D03 /* SecondPage */ = {
 			isa = PBXGroup;
 			children = (
+				A37A9C0B22CDDA3300233E39 /* 动画 */,
 				A3180ACE22CCA46F006A2D03 /* SecondPage.swift */,
 			);
 			path = SecondPage;
+			sourceTree = "<group>";
+		};
+		A37A9C0B22CDDA3300233E39 /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				A37A9C0C22CDDA6200233E39 /* CardPage.swift */,
+			);
+			path = "动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,6 +718,7 @@
 				A30A14B322CB034500252DC6 /* ProfileHost.swift in Sources */,
 				A30D5A2E22C9FB98004A04CD /* SceneDelegate.swift in Sources */,
 				A3180AB922CCA3E8006A2D03 /* SliderPage.swift in Sources */,
+				A37A9C0D22CDDA6200233E39 /* CardPage.swift in Sources */,
 				A3180AC222CCA3E8006A2D03 /* LoopControl.swift in Sources */,
 				A30A149222CB02AD00252DC6 /* Landmark.swift in Sources */,
 				A30A149A22CB02ED00252DC6 /* LandmarkList.swift in Sources */,

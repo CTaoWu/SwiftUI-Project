@@ -15,7 +15,7 @@ struct VStkPage : View {
             Text("你看我下面那个Text")
             Divider()
             
-            Text("为什么会垂直，因为我们两个Text是包含在VStack里的aaaaa")
+            Text("为什么会垂直，因为我们两个Text是包含在VStack里的")
                 .lineLimit(nil)
             Divider()
             
@@ -24,9 +24,10 @@ struct VStkPage : View {
             Divider()
             
             Text("第二种种设置默认属性的创建方式VStack(设置的属性) { 内容 }")
-                .lineLimit(nil)//设置成nil才不限制行数，跟之前的设置成0不一样了
+                .lineLimit(nil)
             Divider()
         }
+            .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
     }
 }
 

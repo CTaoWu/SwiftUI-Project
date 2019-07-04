@@ -13,11 +13,6 @@ struct ContentView : View {
         ///ViewBuilder 超过10个，编译报错~苹果爸爸不让
         NavigationView {
             List {
-                Section(header: Text("苹果官方demo"), content: {
-                    NavigationButton(destination: CategoryHome().environmentObject(UserData())) {
-                        ContentRow(title: "苹果官方demo", description: "苹果官方demo")
-                    }
-                })
                 Section(header: Text("常用的声明式方式"), content: {
                     NavigationButton(destination: VStkPage()) {
                         ContentRow(title: "VStack", description: "垂直布局")

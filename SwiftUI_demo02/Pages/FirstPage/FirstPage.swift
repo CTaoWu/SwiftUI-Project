@@ -10,7 +10,8 @@ import SwiftUI
 
 struct FirstPage : View {
     var body: some View {
-        Text("FirstPage")
+        
+        CategoryHome().environmentObject(UserData())
     }
 }
 
