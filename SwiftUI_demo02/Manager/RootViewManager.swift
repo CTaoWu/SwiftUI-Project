@@ -14,27 +14,36 @@ struct RootViewManager : View {
     @State private var labs = ["home", "msg", "preview", "user"]
     
     var body: some View {
-//        TabbedView(selection: $current) {
-//            ForEach((0..<self.images.count).map{ $0 }){item in
-//                TabbedViewItem(index: item)
-//                    .tabItemLabel(
-//                        VStack {
-//                            Image(self.images[item])
-//                            Text(self.labs[item])
-//                        }
-//                )
-//            }
         TabbedView(selection: $current) {
-//            ForEach((0..<self.images.count).map{ $0 }) { index in
-                ContentView()
-                    .tabItemLabel(
-                        VStack {
-                            Image(self.images[0])
-                            Text(self.labs[0])
-                        }
-                    )
-//            }
-        }
+            FirstPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[0])
+                        Text(self.labs[0])
+                    }
+            ).tag(0)
+            SecondPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[1])
+                        Text(self.labs[1])
+                    }
+            ).tag(1)
+            ThirdPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[2])
+                        Text(self.labs[2])
+                    }
+            ).tag(2)
+            ContentView()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[3])
+                        Text(self.labs[3])
+                    }
+                ).tag(3)
+            }
     }
 }
 

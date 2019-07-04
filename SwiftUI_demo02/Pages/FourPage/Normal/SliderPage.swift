@@ -18,7 +18,6 @@ struct SliderPage : View {
                 print("\(self.bindingValue)")
             }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
             Text(" from：滑动开始的值，through：最大值")
-
         }
     }
 }

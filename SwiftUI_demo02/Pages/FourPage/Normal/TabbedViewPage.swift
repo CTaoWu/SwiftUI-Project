@@ -31,7 +31,7 @@ struct TabbedViewPage : View {
     }
 }
 
-struct TabbedViewItem: View {
+private struct TabbedViewItem: View {
     var index: Int
 
     var body: some View {

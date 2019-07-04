@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
+        ///ViewBuilder 超过10个，编译报错~苹果爸爸不让
         NavigationView {
             List {
                 Section(header: Text("苹果官方demo"), content: {

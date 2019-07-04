@@ -86,6 +86,9 @@
 		A3180AC722CCA3E8006A2D03 /* VStkPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AAB22CCA3E8006A2D03 /* VStkPage.swift */; };
 		A3180AC822CCA3E8006A2D03 /* HStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AAC22CCA3E8006A2D03 /* HStackPage.swift */; };
 		A3180AC922CCA3E8006A2D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AAD22CCA3E8006A2D03 /* ContentView.swift */; };
+		A3180ACD22CCA462006A2D03 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180ACC22CCA462006A2D03 /* FirstPage.swift */; };
+		A3180ACF22CCA46F006A2D03 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180ACE22CCA46F006A2D03 /* SecondPage.swift */; };
+		A3180AD122CCA487006A2D03 /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AD022CCA487006A2D03 /* ThirdPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +194,9 @@
 		A3180AAB22CCA3E8006A2D03 /* VStkPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStkPage.swift; sourceTree = "<group>"; };
 		A3180AAC22CCA3E8006A2D03 /* HStackPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStackPage.swift; sourceTree = "<group>"; };
 		A3180AAD22CCA3E8006A2D03 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3180ACC22CCA462006A2D03 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		A3180ACE22CCA46F006A2D03 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		A3180AD022CCA487006A2D03 /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +481,7 @@
 		A3180AAE22CCA3E8006A2D03 /* ThirdPage */ = {
 			isa = PBXGroup;
 			children = (
+				A3180AD022CCA487006A2D03 /* ThirdPage.swift */,
 			);
 			path = ThirdPage;
 			sourceTree = "<group>";
@@ -482,6 +489,7 @@
 		A3180AAF22CCA3E8006A2D03 /* FirstPage */ = {
 			isa = PBXGroup;
 			children = (
+				A3180ACC22CCA462006A2D03 /* FirstPage.swift */,
 			);
 			path = FirstPage;
 			sourceTree = "<group>";
@@ -489,6 +497,7 @@
 		A3180AB022CCA3E8006A2D03 /* SecondPage */ = {
 			isa = PBXGroup;
 			children = (
+				A3180ACE22CCA46F006A2D03 /* SecondPage.swift */,
 			);
 			path = SecondPage;
 			sourceTree = "<group>";
@@ -642,6 +651,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3180ACF22CCA46F006A2D03 /* SecondPage.swift in Sources */,
 				A3180AC022CCA3E8006A2D03 /* DividerPage.swift in Sources */,
 				A3180AB422CCA3E8006A2D03 /* HelloWorldPage.swift in Sources */,
 				A3180AB722CCA3E8006A2D03 /* ButtonPage.swift in Sources */,
@@ -671,11 +681,13 @@
 				A30A149C22CB02F200252DC6 /* Badge.swift in Sources */,
 				A3180ABC22CCA3E8006A2D03 /* DatePickerPage.swift in Sources */,
 				A30D5A2C22C9FB98004A04CD /* AppDelegate.swift in Sources */,
+				A3180ACD22CCA462006A2D03 /* FirstPage.swift in Sources */,
 				A3180ABB22CCA3E8006A2D03 /* SegmentedControlPage.swift in Sources */,
 				A30A14A222CB030100252DC6 /* PathAndShapes.swift in Sources */,
 				A3180AC822CCA3E8006A2D03 /* HStackPage.swift in Sources */,
 				A30A14A422CB030C00252DC6 /* PageViewController.swift in Sources */,
 				A30A14C122CB037800252DC6 /* CategoryRow.swift in Sources */,
+				A3180AD122CCA487006A2D03 /* ThirdPage.swift in Sources */,
 				A3180AC422CCA3E8006A2D03 /* LoopView.swift in Sources */,
 				A3180ABE22CCA3E8006A2D03 /* TextFieldPage.swift in Sources */,
 				A3180ABD22CCA3E8006A2D03 /* TabbedViewPage.swift in Sources */,
