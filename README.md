@@ -4,7 +4,7 @@
 ==================
 
 感谢:  
-<https://www.youtube.com/channel/UCTIhfOopxukTIRkbXJ3kN-g>
+
 
 注意：（在例子中，一个容器声明里加入的容器如果超过10个，就报错了）ViewBuilder 只实现了最多十个参数的 buildBlock，内部声明超过10个以后，编译会报错……
 ```swift
