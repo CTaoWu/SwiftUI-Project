@@ -32,28 +32,40 @@ extension View {
 
 导航和标签--  
 =========
-> * TabbedView:  类似UITabbarController
+> * TabbedView:  
+    - 类似UITabbarController
+    - 需要给view添加tag，tag使用来做切换展示界面的标识
 ```swift
-/// A view which allows for switching between multiple child views using
-/// interactable user interface elements.
-///
-/// - Note: `TabbedView` only supports tab items of type `Text`, `Image`, or a
-/// `LayoutView` of `Image` and `Text`. Passing any other type of view will
-/// result in a visible, empty tab item.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, *)
-@available(watchOS, unavailable)
-public struct TabbedView<SelectionValue, Content> where SelectionValue : Hashable, Content : View {
-
-    /// Creates an instance that selects from content associated with
-    /// `Selection` values.
-    public init(selection: Binding<SelectionValue>, content: () -> Content)
-
-    /// The type of view representing the body of this view.
-    ///
-    /// When you create a custom view, Swift infers this type from your
-    /// implementation of the required `body` property.
-    public typealias Body = Never
-}
+        TabbedView(selection: $current) {
+            FirstPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[0])
+                        Text(self.labs[0])
+                    }
+            ).tag(0)
+            SecondPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[1])
+                        Text(self.labs[1])
+                    }
+            ).tag(1)
+            ThirdPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[2])
+                        Text(self.labs[2])
+                    }
+            ).tag(2)
+            ContentView()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[3])
+                        Text(self.labs[3])
+                    }
+                ).tag(3)
+            }
 ```
 
 常用控件--
