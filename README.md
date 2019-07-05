@@ -3,7 +3,12 @@
 如有错误的地方欢迎指出
 ==================
 
-注意：（在例子中，一个容器声明里加入的容器如果超过10个，就报错了）ViewBuilder 只实现了最多十个参数的 buildBlock，内部声明超过10个以后，编译会报错……
+感谢:  
+
+
+注意:    
+* (在例子中，一个容器声明里加入的容器如果超过10个，就报错了)ViewBuilder 只实现了最多十个参数的 buildBlock，内部声明超过10个以后，编译会报错……
+* NavigationView里面嵌套NavigationView会导致界面不显示
 ```swift
 extension ViewBuilder {
 
@@ -22,18 +27,95 @@ extension View {
 
 ```
 
-> 布局声明--  
-> > * VStack:  垂直分布声明
-> > * HStack:  水平分布声明
-> > * ZStack:  叠加分布声明
+常用布局--
+=========
+> * VStack:  垂直分布声明
+```swift
+    var body: some View {
+        VStack {
+            /// alignment:成员排列位置（如，全部从中间开始.center;全部从头开始.leading）\nspacing:成员之间的间距
+            Text("你看我下面那个Text")
+            Divider()
+            
+            Text("为什么会垂直，因为我们两个Text是包含在VStack里的")
+                .lineLimit(nil)
+            Divider()
+            
+            Text("第一种设置默认属性的创建方式VStack { 内容 }")
+                .lineLimit(nil)//设置成nil才不限制行数，跟之前的设置成0不一样了
+            Divider()
+            
+            Text("第二种种设置默认属性的创建方式VStack(设置的属性) { 内容 }")
+                .lineLimit(nil)
+            Divider()
+        }
+            .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+    }
+```
+> * HStack:  水平分布声明
+```swift
+    var body: some View {
+        HStack(alignment: .firstTextBaseline, spacing: 10) {
+            /// alignment:成员排列位置（如，全部从中间开始.center;全部从头开始.leading）\nspacing:成员之间的间距
+            Text("第一组内容").lineLimit(nil)
+            Text("第二组内容").lineLimit(nil)
+            Text("第三组内容").lineLimit(nil)
+            Text("第四四四四四四四四四四四四四四四四四四四四四四四四四四四四四四四四组内容").lineLimit(nil)
+            Text("第555555555555555555555组内容").lineLimit(nil)
+        }
+            .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
+    }
+```
+> * ZStack:  叠加分布声明
+> * List:    (UITableView)内置好了cell，只需在里面添加好了需要的子view
+> * ScrollView: 可滚动容器
 
-> 常用控件--  
-> > * Text:  
-> > * TextField: 
-> > * Image:
-> > > resizable()方法调用后才能修改属性
-> > > 没有找到图片，会出错，最好重写方法
-> > * Slider: from-->滑动开始的值，through-->最大值
+导航和标签--  
+=========
+> * TabbedView:  
+    - 类似UITabbarController   
+    - 需要给view添加tag，tag使用来做切换展示界面的标识
+```swift
+        TabbedView(selection: $current) {
+            FirstPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[0])
+                        Text(self.labs[0])
+                    }
+            ).tag(0)
+            SecondPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[1])
+                        Text(self.labs[1])
+                    }
+            ).tag(1)
+            ThirdPage()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[2])
+                        Text(self.labs[2])
+                    }
+            ).tag(2)
+            ContentView()
+                .tabItemLabel(
+                    VStack {
+                        Image(self.images[3])
+                        Text(self.labs[3])
+                    }
+                ).tag(3)
+            }
+```
+
+常用控件--
+=========
+> * Text:  
+> * TextField: 
+> * Image:
+> > resizable()方法调用后才能修改属性
+> > 没有找到图片，会出错，最好重写方法
+> * Slider: from-->滑动开始的值，through-->最大值
 ```swift
 struct SliderPage : View {
     
@@ -50,6 +132,6 @@ struct SliderPage : View {
     }
 }
 ```
-> > * NavigationButton:  
-> > * PresentationButton:  
+> * NavigationButton:  
+> * PresentationButton:  
     
