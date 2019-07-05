@@ -6,7 +6,9 @@
 感谢:  
 
 
-注意：（在例子中，一个容器声明里加入的容器如果超过10个，就报错了）ViewBuilder 只实现了最多十个参数的 buildBlock，内部声明超过10个以后，编译会报错……
+注意:    
+* (在例子中，一个容器声明里加入的容器如果超过10个，就报错了)ViewBuilder 只实现了最多十个参数的 buildBlock，内部声明超过10个以后，编译会报错……
+* NavigationView里面嵌套NavigationView会导致界面不显示
 ```swift
 extension ViewBuilder {
 
