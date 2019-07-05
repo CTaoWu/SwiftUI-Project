@@ -7,14 +7,15 @@
 
 
 注意:    
-* (在例子中，一个容器声明里加入的容器如果超过10个，就报错了)ViewBuilder 只实现了最多十个参数的 buildBlock，内部声明超过10个以后，编译会报错……
-* NavigationView里面嵌套NavigationView会导致界面不显示
+* (在例子中，一个容器声明里加入的容器如果超过10个，就报错了)ViewBuilder 只实现了最多十个参数的 buildBlock，内部声明超过10个以后，编译会报错……so,Group是个好东西
 ```swift
 extension ViewBuilder {
 
     public static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, _ c4: C4, _ c5: C5, _ c6: C6, _ c7: C7, _ c8: C8, _ c9: C9) -> TupleView<(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9)> where C0 : View, C1 : View, C2 : View, C3 : View, C4 : View, C5 : View, C6 : View, C7 : View, C8 : View, C9 : View
 }
 ```
+* NavigationView里面嵌套NavigationView会导致界面不显示
+
 如下，苹果给View添加了拓展
 ```swift
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -25,6 +26,24 @@ extension View {
     public func tapAction(count: Int = 1, _ action: @escaping () -> Void) -> _AutoResultView<Self>
 }
 
+```
+* NavigationView嵌套TabbedView,再使用onAppear修改状态title的值
+```swift
+NavigationView {
+            TabbedView(selection: $current) {
+                FirstPage()
+                    .tabItemLabel(
+                        VStack {
+                            Image(self.images[0])
+                            Text(self.labs[0])
+                        }
+                    )
+                .tag(0).onAppear {
+                    self.title = self.titles[0]
+                }
+                ...
+              }
+              .navigationBarTitle(Text(title))
 ```
 
 常用布局--
