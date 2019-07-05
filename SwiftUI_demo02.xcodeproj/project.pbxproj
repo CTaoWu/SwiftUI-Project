@@ -89,6 +89,8 @@
 		A3180ACD22CCA462006A2D03 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180ACC22CCA462006A2D03 /* FirstPage.swift */; };
 		A3180ACF22CCA46F006A2D03 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180ACE22CCA46F006A2D03 /* SecondPage.swift */; };
 		A3180AD122CCA487006A2D03 /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3180AD022CCA487006A2D03 /* ThirdPage.swift */; };
+		A34CE8C622CEDFD000CE0594 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34CE8C522CEDFD000CE0594 /* FormPage.swift */; };
+		A34CE8C822CEFC2600CE0594 /* TmpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34CE8C722CEFC2600CE0594 /* TmpPage.swift */; };
 		A37A9C0D22CDDA6200233E39 /* CardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A9C0C22CDDA6200233E39 /* CardPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +200,8 @@
 		A3180ACC22CCA462006A2D03 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
 		A3180ACE22CCA46F006A2D03 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
 		A3180AD022CCA487006A2D03 /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
+		A34CE8C522CEDFD000CE0594 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
+		A34CE8C722CEFC2600CE0594 /* TmpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmpPage.swift; sourceTree = "<group>"; };
 		A37A9C0C22CDDA6200233E39 /* CardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -414,6 +418,7 @@
 			children = (
 				A3180A9122CCA3E8006A2D03 /* Scroll */,
 				A3180A9422CCA3E8006A2D03 /* HelloWorldPage.swift */,
+				A34CE8C722CEFC2600CE0594 /* TmpPage.swift */,
 				A3180A9522CCA3E8006A2D03 /* ContentRow.swift */,
 				A3180A9622CCA3E8006A2D03 /* Normal */,
 				A3180AA222CCA3E8006A2D03 /* Sence */,
@@ -476,6 +481,7 @@
 				A3180AAA22CCA3E8006A2D03 /* ZStackPage.swift */,
 				A3180AAB22CCA3E8006A2D03 /* VStkPage.swift */,
 				A3180AAC22CCA3E8006A2D03 /* HStackPage.swift */,
+				A34CE8C522CEDFD000CE0594 /* FormPage.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -681,6 +687,7 @@
 				A3180AB822CCA3E8006A2D03 /* ImagePage.swift in Sources */,
 				A30A14BC22CB037800252DC6 /* LandmarkRow.swift in Sources */,
 				A3180AC322CCA3E8006A2D03 /* LoopViewController.swift in Sources */,
+				A34CE8C622CEDFD000CE0594 /* FormPage.swift in Sources */,
 				A30A14C022CB037800252DC6 /* GraphCapsule.swift in Sources */,
 				A30A14C622CB03B700252DC6 /* HexagonParameters.swift in Sources */,
 				A30A14A022CB02F900252DC6 /* HikeDetail.swift in Sources */,
@@ -691,6 +698,7 @@
 				A3180AC722CCA3E8006A2D03 /* VStkPage.swift in Sources */,
 				A30A149C22CB02F200252DC6 /* Badge.swift in Sources */,
 				A3180ABC22CCA3E8006A2D03 /* DatePickerPage.swift in Sources */,
+				A34CE8C822CEFC2600CE0594 /* TmpPage.swift in Sources */,
 				A30D5A2C22C9FB98004A04CD /* AppDelegate.swift in Sources */,
 				A3180ACD22CCA462006A2D03 /* FirstPage.swift in Sources */,
 				A3180ABB22CCA3E8006A2D03 /* SegmentedControlPage.swift in Sources */,

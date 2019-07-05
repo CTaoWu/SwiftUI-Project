@@ -1,25 +1,25 @@
 //
-//  ThirdPage.swift
+//  TmpPage.swift
 //  SwiftUI_demo02
 //
-//  Created by 三毛与宝宝 on 2019/7/3.
+//  Created by 三毛与宝宝 on 2019/7/5.
 //  Copyright © 2019 SwiftUI学习之路. All rights reserved.
 //
 
 import SwiftUI
 
-struct ThirdPage : View {
+struct TmpPage : View {
     var body: some View {
         NavigationButton(destination: HelloWorldPage()) {
-            Text("ThirdPage点我点我")
+            Text("TmpPage点我点我")
         }
     }
 }
 
 #if DEBUG
-struct ThirdPage_Previews : PreviewProvider {
+struct TmpPage_Previews : PreviewProvider {
     static var previews: some View {
-        ThirdPage()
+        TmpPage()
     }
 }
 #endif

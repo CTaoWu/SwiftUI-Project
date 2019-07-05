@@ -12,6 +12,7 @@ struct FirstPage : View {
     var body: some View {
         
         CategoryHome().environmentObject(UserData())
+//        Text("firstPage")
     }
 }
 

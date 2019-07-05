@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView : View {
     var body: some View {
         ///ViewBuilder 超过10个，编译报错~苹果爸爸不让
-        NavigationView {
+//        NavigationView {
             List {
                 Section(header: Text("常用的声明式方式"), content: {
                     NavigationButton(destination: VStkPage()) {
@@ -28,6 +28,9 @@ struct ContentView : View {
                     }
                     NavigationButton(destination: ListPage()) {
                         ContentRow(title: "List", description: "可滚动声明")
+                    }
+                    NavigationButton(destination: FormPage()) {
+                        ContentRow(title: "Form", description: "表单")
                     }
                     NavigationButton(destination: GroupPage()) {
                         ContentRow(title: "Group", description: "视图集合")
@@ -72,7 +75,7 @@ struct ContentView : View {
                 })
             }
                 .navigationBarTitle(Text("SwiftUI-常用内容"))
-        }
+//        }
     }
 }
 

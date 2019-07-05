@@ -13,28 +13,26 @@ struct SecondPage : View {
     @State private var quantity = 0
     @State private var date = Date()
     var body: some View {
-        NavigationView {
-            Form {
-                Section(header: Text("表单")) {
-                    DatePicker($date, label: { Text("Due Date") })
-                    Picker(selection: $selection, label:
-                        Text("Picker Name")
-                        , content: {
-                            Text("Value 1").tag(0)
-                            Text("Value 2").tag(1)
-                            Text("Value 3").tag(2)
-                            Text("Value 4").tag(3)
-                    })
-                }
-                Section(header: Text("动画")) {
-                    NavigationButton(destination: CardPage()) {
-                        Text("卡片显示")
-                    }
+        Form {
+            Section(header: Text("表单")) {
+                DatePicker($date, label: { Text("Due Date") })
+                Picker(selection: $selection, label:
+                    Text("Picker Name")
+                    , content: {
+                        Text("Value 1").tag(0)
+                        Text("Value 2").tag(1)
+                        Text("Value 3").tag(2)
+                        Text("Value 4").tag(3)
+                })
+            }
+            Section(header: Text("动画")) {
+                NavigationButton(destination: CardPage()) {
+                    Text("卡片反转")
                 }
             }
-                .edgesIgnoringSafeArea(.bottom)
-                .navigationBarTitle(Text("特殊"))
         }
+            .edgesIgnoringSafeArea(.bottom)
+            .navigationBarTitle(Text("特殊"))
     }
 }
 
