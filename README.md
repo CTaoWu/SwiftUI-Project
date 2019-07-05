@@ -27,7 +27,7 @@ extension View {
 }
 
 ```
-* NavigationView嵌套TabbedView,再使用onAppear修改状态title的值
+* 导航栏推进下一个界面时,使用 NavigationView嵌套TabbedView(使用onAppear修改状态title的值),底部标签栏会自动隐藏
 ```swift
 NavigationView {
             TabbedView(selection: $current) {
