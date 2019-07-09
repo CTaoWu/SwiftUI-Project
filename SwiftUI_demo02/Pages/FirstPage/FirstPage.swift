@@ -11,8 +11,9 @@ import SwiftUI
 struct FirstPage : View {
     var body: some View {
         
-        CategoryHome().environmentObject(UserData())
-//        Text("firstPage")
+        // 注:不能在创建body里面设置状态
+//        CategoryHome().environmentObject(UserData())
+        Text("firstPage")
     }
 }
 

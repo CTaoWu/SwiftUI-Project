@@ -25,7 +25,7 @@ struct CategoryHome : View {
         NavigationView {
             List {
                 PageView(features.map { FeatureCard(landmark: $0) })
-                    .frame(height: 200)
+                    .frame(height: 200.0)
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(categories.keys.sorted().identified(by: \.self)) { key in
@@ -33,12 +33,12 @@ struct CategoryHome : View {
                 }
                     .listRowInsets(EdgeInsets())
                 
-                NavigationButton(destination: LandmarkList()) {
+                NavigationLink(destination: LandmarkList()) {
                     Text("See All")
                 }
             }
                 .navigationBarTitle(Text("Featured"))
-                .navigationBarItems(trailing: PresentationButton(
+                .navigationBarItems(trailing: PresentationLink(
                     destination:
                         ProfileHost()
                 ){

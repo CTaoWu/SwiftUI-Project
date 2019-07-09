@@ -25,11 +25,11 @@ struct SecondPage : View {
                         Text("Value 4").tag(3)
                 })
             }
-            Section(header: Text("动画")) {
-                NavigationButton(destination: CardPage()) {
-                    Text("卡片反转")
-                }
-            }
+//            Section(header: Text("动画")) {
+//                NavigationButton(destination: CardPage()) {
+//                    Text("卡片反转")
+//                }
+//            }
         }
             .edgesIgnoringSafeArea(.bottom)
             .navigationBarTitle(Text("特殊"))

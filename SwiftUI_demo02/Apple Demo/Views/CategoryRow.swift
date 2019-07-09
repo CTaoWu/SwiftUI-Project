@@ -14,28 +14,28 @@ struct CategoryRow : View {
     
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
+//        VStack(alignment: .leading, spacing: 0) {
             
             Text(self.categoryName)
                 .font(.headline)
-                .padding(.leading, 15)
-                .padding(.top, 15)
+//                .padding(.leading, 15)
+//                .padding(.top, 15)
             
-            ScrollView(showsVerticalIndicator: true) {
-                HStack() {
-                    ForEach(self.items) { landmark in
-                        NavigationButton(
-                            destination: LandmarkDetail (
-                                landmark: landmark
-                            )
-                        ) {
-                            CategoryItem(landmark: landmark)
-                        }
-                    }
-                }
-            }
-                .frame(height: 185)
-        }
+//        ScrollView() {
+//                HStack() {
+//                    ForEach(self.items) { landmark in
+//                        NavigationLink(
+//                            destination: LandmarkDetail (
+//                                landmark: landmark
+//                            )
+//                        ) {
+//                            CategoryItem(landmark: landmark)
+//                        }
+//                    }
+//                }
+//            }
+//                .frame(height: 185)
+//        }
     }
 }
 

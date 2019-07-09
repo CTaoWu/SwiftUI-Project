@@ -15,10 +15,10 @@ struct ButtonPage : View {
     var body: some View {
         
         List {
-            NavigationButton(destination: HelloWorldPage()) {
+            NavigationLink(destination: HelloWorldPage()) {
                 ContentRow(title: "NavigationButton", description: "带导航栏按钮")
             }
-            PresentationButton(destination: HelloWorldPage()) {
+            PresentationLink(destination: HelloWorldPage()) {
                 ContentRow(title: "PresentationButton", description: "底部弹出视图的按钮，很像京东加入购物车动画")
             }
             Button.init(action: {

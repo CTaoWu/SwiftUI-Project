@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ThirdPage : View {
     var body: some View {
-        NavigationButton(destination: HelloWorldPage()) {
+        NavigationLink(destination: HelloWorldPage()) {
             Text("ThirdPage点我点我")
         }
     }

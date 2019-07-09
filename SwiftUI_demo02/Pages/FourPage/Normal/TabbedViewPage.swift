@@ -19,13 +19,17 @@ struct TabbedViewPage : View {
         TabbedView(selection: $index) {
             // 循环创建item，依托于View的tabItemLabel内
             ForEach((0..<images.count).map{ $0 }){item in
-                TabbedViewItem(index: item)
-                    .tabItemLabel(
-                        VStack {
-                            Image(self.images[item])
-                            Text(self.labs[item])
-                        }
-                    )
+                TabbedViewItem(index: item).tabItem
+                    {
+                        Text(self.labs[item])
+                }
+//                TabbedViewItem(index: item)
+//                    .tabItemLabel(
+//                        VStack {
+//                            Image(self.images[item])
+//                            Text(self.labs[item])
+//                        }
+//                    )
             }
         }.accentColor(Color.orange)//设置颜色
     }

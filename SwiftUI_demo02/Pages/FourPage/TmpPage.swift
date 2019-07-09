@@ -10,8 +10,11 @@ import SwiftUI
 
 struct TmpPage : View {
     var body: some View {
-        NavigationButton(destination: HelloWorldPage()) {
-            Text("TmpPage点我点我")
+//        NavigationButton(destination: HelloWorldPage()) {
+//            Text("TmpPage点我点我")
+//        }
+        NavigationLink(destination: HelloWorldPage()) {
+            Text("tmppage")
         }
     }
 }
