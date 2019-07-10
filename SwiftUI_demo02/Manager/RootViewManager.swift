@@ -10,48 +10,45 @@ import SwiftUI
 
 struct RootViewManager : View {
     @State private var currentIndex = 0
-    @State private var images = ["home", "msg", "preview", "user"]
-    @State private var labs = ["home", "msg", "preview", "user"]
     @State private var pageTitle = "首页"
-    private var titles = ["1", "2", "3", "4"]
     var body: some View {
         /// .tag()修改，放在view后面，
         NavigationView {
             TabbedView(selection: $currentIndex) {
                 FirstPage()
                     .tabItem(){
-                        VStack {
-                            Image(self.images[0])
-                            Text(self.labs[0])
-                        }
-                }.tag(0).onAppear(){}
+                        RootViewItem(index: 0)
+                }.tag(0).onAppear{self.pageTitle = "首页"}
                 SecondPage()
                     .tabItem(){
-                        VStack {
-                            Image(self.images[1])
-                            Text(self.labs[1])
-                        }
-                }.tag(1).onAppear(){}
+                        RootViewItem(index: 1)
+                }.tag(1).onAppear{self.pageTitle = "2"}
                 ThirdPage()
                     .tabItem(){
-                        VStack {
-                            Image(self.images[2])
-                            Text(self.labs[2])
-                        }
-                }.tag(2).onAppear(){}
+                        RootViewItem(index: 2)
+                }.tag(2).onAppear{self.pageTitle = "3"}
                 ContentView()
                     .tabItem(){
-                        VStack {
-                            Image(self.images[3])
-                            Text(self.labs[3])
-                        }
-                }.tag(3).onAppear(){}
+                        RootViewItem(index: 3)
+                }.tag(3).onAppear{self.pageTitle = "4"}
             }
             .navigationBarTitle(Text(pageTitle))
         }
     }
 }
 
+private struct RootViewItem: View {
+    var index: Int = 0
+    
+    @State private var images = ["home", "msg", "preview", "user"]
+    @State private var labs = ["home", "msg", "Extension", "Basic"]
+    var body: some View {
+        VStack {
+            Image(self.images[index])
+            Text(self.labs[index])
+        }
+    }
+}
 #if DEBUG
 struct RootViewManager_Previews : PreviewProvider {
     static var previews: some View {

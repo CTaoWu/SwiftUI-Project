@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0B3B7A22D5BD3100E7EF45 /* ButtonStylePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B3B7922D5BD3100E7EF45 /* ButtonStylePage.swift */; };
+		2E0B3B7C22D5C4B300E7EF45 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B3B7B22D5C4B300E7EF45 /* ButtonExtension.swift */; };
 		A30A147B22CB029800252DC6 /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30A146922CB029600252DC6 /* hiddenlake.jpg */; };
 		A30A147C22CB029800252DC6 /* chincoteague.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30A146A22CB029600252DC6 /* chincoteague.jpg */; };
 		A30A147D22CB029800252DC6 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30A146B22CB029600252DC6 /* umbagog.jpg */; };
@@ -112,6 +114,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0B3B7922D5BD3100E7EF45 /* ButtonStylePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylePage.swift; sourceTree = "<group>"; };
+		2E0B3B7B22D5C4B300E7EF45 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		A30A146922CB029600252DC6 /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiddenlake.jpg; sourceTree = "<group>"; };
 		A30A146A22CB029600252DC6 /* chincoteague.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chincoteague.jpg; sourceTree = "<group>"; };
 		A30A146B22CB029600252DC6 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
@@ -230,6 +234,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0B3B7822D5BCEE00E7EF45 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E0B3B7B22D5C4B300E7EF45 /* ButtonExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A30A146322CB014A00252DC6 /* Apple Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +366,7 @@
 		A30D5A2A22C9FB98004A04CD /* SwiftUI_demo02 */ = {
 			isa = PBXGroup;
 			children = (
+				2E0B3B7822D5BCEE00E7EF45 /* Extension */,
 				A3180A8D22CCA3E8006A2D03 /* Manager */,
 				A3180A8F22CCA3E8006A2D03 /* Pages */,
 				A30A146322CB014A00252DC6 /* Apple Demo */,
@@ -405,15 +418,15 @@
 		A3180A8F22CCA3E8006A2D03 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				A3180A9022CCA3E8006A2D03 /* FourPage */,
-				A3180AAE22CCA3E8006A2D03 /* ThirdPage */,
+				A3180A9022CCA3E8006A2D03 /* Basic */,
+				A3180AAE22CCA3E8006A2D03 /* Extension */,
 				A3180AAF22CCA3E8006A2D03 /* FirstPage */,
 				A3180AB022CCA3E8006A2D03 /* SecondPage */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
 		};
-		A3180A9022CCA3E8006A2D03 /* FourPage */ = {
+		A3180A9022CCA3E8006A2D03 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
 				A3180A9122CCA3E8006A2D03 /* Scroll */,
@@ -425,7 +438,7 @@
 				A3180AA822CCA3E8006A2D03 /* Stack */,
 				A3180AAD22CCA3E8006A2D03 /* ContentView.swift */,
 			);
-			path = FourPage;
+			path = Basic;
 			sourceTree = "<group>";
 		};
 		A3180A9122CCA3E8006A2D03 /* Scroll */ = {
@@ -486,12 +499,13 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
-		A3180AAE22CCA3E8006A2D03 /* ThirdPage */ = {
+		A3180AAE22CCA3E8006A2D03 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				A3180AD022CCA487006A2D03 /* ThirdPage.swift */,
+				2E0B3B7922D5BD3100E7EF45 /* ButtonStylePage.swift */,
 			);
-			path = ThirdPage;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		A3180AAF22CCA3E8006A2D03 /* FirstPage */ = {
@@ -709,6 +723,7 @@
 				A3180AD122CCA487006A2D03 /* ThirdPage.swift in Sources */,
 				A3180AC422CCA3E8006A2D03 /* LoopView.swift in Sources */,
 				A3180ABE22CCA3E8006A2D03 /* TextFieldPage.swift in Sources */,
+				2E0B3B7C22D5C4B300E7EF45 /* ButtonExtension.swift in Sources */,
 				A3180ABD22CCA3E8006A2D03 /* TabbedViewPage.swift in Sources */,
 				A30A149622CB02CD00252DC6 /* CategoryHome.swift in Sources */,
 				A30A149E22CB02F600252DC6 /* HikeView.swift in Sources */,
@@ -718,6 +733,7 @@
 				A3180AB122CCA3E8006A2D03 /* RootViewManager.swift in Sources */,
 				A30A149122CB02AD00252DC6 /* Hike.swift in Sources */,
 				A30A14C222CB037800252DC6 /* CircleImage.swift in Sources */,
+				2E0B3B7A22D5BD3100E7EF45 /* ButtonStylePage.swift in Sources */,
 				A30A14BD22CB037800252DC6 /* HikeBadge.swift in Sources */,
 				A3180AB522CCA3E8006A2D03 /* ContentRow.swift in Sources */,
 				A30A14B022CB034500252DC6 /* ProfileSummary.swift in Sources */,
