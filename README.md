@@ -32,7 +32,7 @@ extension View {
 NavigationView {
             TabbedView(selection: $current) {
                 FirstPage()
-                    .tabItemLabel(
+                    .tabItem( // 在beta3后tabItemLabel换成了tabItem
                         VStack {
                             Image(self.images[0])
                             Text(self.labs[0])
