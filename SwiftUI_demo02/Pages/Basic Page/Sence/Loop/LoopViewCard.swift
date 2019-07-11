@@ -1,24 +1,25 @@
-/*
- See LICENSE folder for this sample’s licensing information.
- 
- Abstract:
- A view that shows a featured landmark.
- */
+//
+//  LoopViewCard.swift
+//  SwiftUI_demo02
+//
+//  Created by 三毛与宝宝 on 2019/7/3.
+//  Copyright © 2019 SwiftUI学习之路. All rights reserved.
+//
 
 import SwiftUI
 
-struct FeatureCard: View {
+struct LoopViewCard: View {
     var landmark: Landmark
     
     var body: some View {
         landmark.featureImage?
             .resizable()
-//            .aspectRatio(3 / 2, contentMode: .fit)
-            .overlay(TextOverlay1(landmark: landmark))
+            .aspectRatio(3/2, contentMode: .fit)
+            .overlay(TextOverlay(landmark: landmark))
     }
 }
 
-struct TextOverlay1: View {
+struct TextOverlay: View {
     var landmark: Landmark
     
     var gradient: LinearGradient {
@@ -37,17 +38,16 @@ struct TextOverlay1: View {
                     .font(.title)
                     .bold()
                 Text(landmark.park)
-                }
-                .padding()
             }
-            .foregroundColor(.white)
+            .padding()
+        }
+        .foregroundColor(.white)
     }
 }
-
 #if DEBUG
-struct FeatureCard_Previews: PreviewProvider {
+struct LoopViewCard_Previews : PreviewProvider {
     static var previews: some View {
-        FeatureCard(landmark: features[0])
+        LoopViewCard(landmark: features[0])
     }
 }
 #endif

@@ -64,6 +64,10 @@ struct ContentView : View {
                     NavigationLink(destination: SegmentedControlPage()) {
                         ContentRow(title: "SegmentedControl", description: "分部控制器")
                     }
+                    NavigationLink(destination: LoopView(features.map { LoopViewCard(landmark: $0) }).frame(height: 280)) {
+                        ContentRow(title: "SegmentedControl", description: "官方自带滚动工具")
+                    }
+                    
                 })
                 Section(header: Text("导航"), content: {
                     NavigationLink(destination: NavigationViewPage()) {

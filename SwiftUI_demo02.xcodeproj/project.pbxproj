@@ -418,7 +418,7 @@
 		A3180A8F22CCA3E8006A2D03 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				A3180A9022CCA3E8006A2D03 /* Basic */,
+				A3180A9022CCA3E8006A2D03 /* Basic Page */,
 				A3180AAE22CCA3E8006A2D03 /* Extension */,
 				A3180AAF22CCA3E8006A2D03 /* FirstPage */,
 				A3180AB022CCA3E8006A2D03 /* SecondPage */,
@@ -426,19 +426,19 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
-		A3180A9022CCA3E8006A2D03 /* Basic */ = {
+		A3180A9022CCA3E8006A2D03 /* Basic Page */ = {
 			isa = PBXGroup;
 			children = (
 				A3180A9122CCA3E8006A2D03 /* Scroll */,
-				A3180A9422CCA3E8006A2D03 /* HelloWorldPage.swift */,
-				A34CE8C722CEFC2600CE0594 /* TmpPage.swift */,
-				A3180A9522CCA3E8006A2D03 /* ContentRow.swift */,
 				A3180A9622CCA3E8006A2D03 /* Normal */,
 				A3180AA222CCA3E8006A2D03 /* Sence */,
 				A3180AA822CCA3E8006A2D03 /* Stack */,
 				A3180AAD22CCA3E8006A2D03 /* ContentView.swift */,
+				A3180A9422CCA3E8006A2D03 /* HelloWorldPage.swift */,
+				A34CE8C722CEFC2600CE0594 /* TmpPage.swift */,
+				A3180A9522CCA3E8006A2D03 /* ContentRow.swift */,
 			);
-			path = Basic;
+			path = "Basic Page";
 			sourceTree = "<group>";
 		};
 		A3180A9122CCA3E8006A2D03 /* Scroll */ = {
